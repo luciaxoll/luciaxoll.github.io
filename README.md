@@ -1,7 +1,8 @@
-# Personal Portfolio ⚡️ 
+# Personal Portfolio ⚡️
+> This repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.io.git
 > A clean, beautiful, responsive portfolio template for Software Developers!
 
-> https://varadbhogayata.github.io
+> https://luciaxoll.github.io
 
 ![GitHub stars](https://img.shields.io/github/stars/varadbhogayata/varadbhogayata.github.io) 
 ![GitHub forks](https://img.shields.io/github/forks/varadbhogayata/varadbhogayata.github.io)
@@ -70,3 +71,4 @@ To view a live example, **[click here](https://varadbhogayata.github.io/)**
 
 ## License 📄
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
+
