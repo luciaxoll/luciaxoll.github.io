@@ -5,17 +5,15 @@
 
 > https://luciaxoll.github.io
 
->Activity 1
-[(/assets/img/Act1.jpg)]
+> Activity 1  
+![Activity 1 Screenshot](/assets/img/Act1.jpg)
 
+> Activity 2  
+[![Activity 2 Screenshot](/assets/img/Act2.jpg)](https://luciaxoll.github.io)
 
->Activity 2
-[(/assets/img/Act2.jpg)(https://luciaxoll.github.io)]
+![Activity 2 Extra Screenshot](/assets/img/Act2_2.jpg)
 
-[(/assets/img/Act2_2.jpg)]
+> Activity 3  
+![Activity 3 Screenshot](/assets/img/Act3.jpg)
 
-
->Activity 3
-[(/assets/img/Act3.jpg)]
-
-[(/assets/img/Act3_2.jpg)]
+![Activity 3 Extra Screenshot](/assets/img/Act3_2.jpg)
