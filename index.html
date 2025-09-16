@@ -71,6 +71,66 @@
   <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
 </head>
 
+<script>
+  const projects = [
+    {
+      title: "UTMIST AI Chatbot",
+      description: "AI chatbot that handles student inquiries and promotes events.",
+      image: "/assets/img/AIChatbots.webp",
+      link: "https://github.com/luciaxoll/ChatbotV2"
+    },
+    {
+      title: "Image Super Resolution (GAN)",
+      description: "GAN-based model to upscale human face images from 512x512 to 1024x1024.",
+      image: "/assets/img/GAN.webp",
+      link: "https://github.com/luciaxoll/Image-Super-Resolution"
+    },
+  ];
+
+  let currentIndex = 0; // Start at 0
+  const itemsPerLoad = 1; // Show only 1 at a time
+
+  function loadProjects() {
+    const container = document.getElementById("recent-projects-container");
+
+    // Load next set of projects
+    for (let i = 0; i < itemsPerLoad && currentIndex < projects.length; i++) {
+      const project = projects[currentIndex];
+
+      // Create card HTML
+      const projectCard = `
+        <div class="card medium">
+          <div class="card-image">
+            <img src="${project.image}" alt="${project.title}">
+          </div>
+          <div class="card-content">
+            <span class="card-title">${project.title}</span>
+            <p>${project.description}</p>
+          </div>
+          <div class="card-action">
+            <a href="${project.link}" target="_blank">View Project</a>
+          </div>
+        </div>
+      `;
+
+      container.insertAdjacentHTML("beforeend", projectCard);
+      currentIndex++;
+    }
+
+    // Hide button if all projects are loaded
+    if (currentIndex >= projects.length) {
+      document.getElementById("load-more-btn").style.display = "none";
+    }
+  }
+
+  // Event listener for button
+  document.getElementById("load-more-btn").addEventListener("click", loadProjects);
+
+  // Load the first project when page loads
+  window.onload = loadProjects;
+</script>
+
+
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
@@ -435,7 +495,7 @@
       <div class="container">
         <div class="row">
 
-          <!-- Image Generator -->
+          <!-- UTMIST AI Chatbot -->
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -474,6 +534,18 @@
         </div>
       </div>
     </section>
+
+    <!-- Recent Projects Section -->
+    <section id="recent-projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Recent Projects</h3>
+      <div id="recent-projects-container" class="container">
+        <!-- JavaScript will inject project cards here -->
+      </div>
+      <div class="center">
+        <button id="load-more-btn" class="btn waves-effect waves-light purple">Load More</button>
+      </div>
+    </section>
+
 
     <!-- Fifth Section: Skills -->
     <section id="skills" class="section scrollspy">
