@@ -5,5 +5,11 @@
 
 > https://luciaxoll.github.io
 
+>Activity 1
+[![Activity 1](/assets/img/Act1.jpg)]
 
-[![Activity 1](/assets/img/Act1.jpg)](https://luciaxoll.github.io)
+>Activity 2
+[![Activity 2](/assets/img/Act2.jpg)](https://luciaxoll.github.io)
+
+[![Activity 2](/assets/img/Act2_2.jpg)]
+
