@@ -6,3 +6,4 @@
 > https://luciaxoll.github.io
 
 
+[![Activity 1](/assets/img/Act1.jpg)](https://luciaxoll.github.io)
